@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bright_foreground_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp56"
+        android:background="@color/green_app_color"
+        android:orientation="horizontal"
+        android:weightSum="7">
+        <LinearLayout
+            android:id="@+id/llGoToMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/navigation_icon"
+                android:layout_gravity="center_vertical|center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hometitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="left|center_vertical"
+            android:text="Filter Settings"
+            android:textColor="@color/background_light"
+            android:textSize="25sp"
+            android:layout_weight="4.8"/>
+        <LinearLayout
+            android:id="@+id/llBackArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.2"
+            android:visibility="invisible">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:src="@drawable/backicon"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8.2">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30.0dip"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/vegan" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Vegan"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbVegan"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color"
+                    android:visibility="gone"/>
+                <LinearLayout
+                    android:id="@+id/llchildVergan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp7"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp20"
+                        android:background="@color/green_app_color">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREAT AS VEGAN"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:textColor="@color/bright_foreground_light"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/bright_foreground_disabled_holo_dark"
+                                android:text="Honey" />
+
+                            <ToggleButton
+                                android:id="@+id/tbHoney"
+                                android:layout_width="@dimen/dp56"
+                                android:layout_height="@dimen/dp30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/switch_back"
+                                android:checked="false"
+                                android:textOff="0"
+                                android:textOn="1"
+                                android:textSize="0.0dip" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:background="@color/grey_app_color"
+                            android:visibility="gone"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Palm Oil"
+                                android:textColor="@color/bright_foreground_disabled_holo_dark" />
+
+                            <ToggleButton
+                                android:id="@+id/tbPalmOil"
+                                android:layout_width="@dimen/dp56"
+                                android:layout_height="@dimen/dp30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/switch_back"
+                                android:checked="false"
+                                android:textOff="0"
+                                android:textOn="1"
+                                android:textSize="0.0dip" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="@color/grey_app_color" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textColor="@color/bright_foreground_disabled_holo_dark"
+                                android:text="Sugar" />
+
+                            <ToggleButton
+                                android:id="@+id/tbSugar"
+                                android:layout_width="@dimen/dp56"
+                                android:layout_height="@dimen/dp30"
+                                android:layout_gravity="center"
+                                android:background="@drawable/switch_back"
+                                android:checked="false"
+                                android:textOff="0"
+                                android:textOn="1"
+                                android:textSize="0.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/crustaceanicon" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Crustacean"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbCrustacean"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/molluscicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:text="Mollusc"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbMollusc"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/treenuticon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Tree nut"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbTreeNut"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/seafishicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Sea Fish"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSeaFish"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/glutenicon" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Gluten"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbGluten"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dairyicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="dairy"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbDairy"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/celeryicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Celery"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbCelery"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lupinicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Lupin"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbLupin"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/seasameicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Sesame"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSeasame"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sulphitesicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Sulphites"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSulphites"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/eggicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Egg"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbEgg"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/soyaicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Soya"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbSoya"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/peanuticon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Peanut"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbPeanut"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_margin="@dimen/dp7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mustardicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="20.0dip"
+                        android:text="Mustard"
+                        android:textColor="@color/bright_foreground_disabled_holo_dark"
+                        android:textSize="16.0dip" />
+
+                    <ToggleButton
+                        android:id="@+id/tbMustard"
+                        android:layout_width="@dimen/dp56"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/switch_back"
+                        android:checked="false"
+                        android:textOff="0"
+                        android:textOn="1"
+                        android:textSize="0.0dip" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/grey_app_color" />
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:background="@color/grey_app_color"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnConfirmChange"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/button_background"
+                android:text="CONFIRM CHANGES"
+                android:textColor="@color/bright_foreground_light" />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ad_unit_id" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Finicky</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8853369659176859/4272350373</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="facebook_app_id">141496113107576</string>
+    <string name="fb_login_protocol_scheme">fb[141496113107576]</string>
+    <string name="title_activity_explore">Explore</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="explore_first">As a Pro, Scan as many times as you want to find the right products for you</string>
+    <string name="explore_second">As a Pro, Get a Better Experience with no distracting Ads</string>
+    <string name="explore_third">As a Pro, Benefit from our Priority Support 24 hours a day, 7 days a week</string>
+    <string name="explore_forth">As a Pro, Search our extensive database to find the right products for you</string>
+    <string name="title_activity_swipe_test">SwipeTest</string>
+    <string name="tvMyAccountSucbsciberMsg">*Subbcirbtion is set to expire on this date.</string>
+    <string name="scan_hint">Align the barcode within the square</string>
+    <string name="flash_off">Flash Off</string>
+    <string name="flash_on">Flash On</string>
+    <string name="terms_and_service"><u>Terms of Service</u></string>
+    <string name="termsOfService">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="appVersion">version 1.0</string>
+    <string name="copyright">\©copyright 2017</string>
+    <string name="aboutUs">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="exactDescription">want to know the ingredients of a specific product and see if you can have it? doing a Exact search allows you to search for specific products in our database</string>
+    <string name="exploreDescrition">want to know the ingredients of a specific product and see if you can have it? doing a Explore search allows you to search for specific products in our database</string>
+    <string name="filterTitle">Fiter By : </string>
+    <string name="filterShowAll">Show All</string>
+    <string name="filterShowOnlySuitable">Show Only Suitable</string>
+    <string name="filterShowMaybeNot">Show Maybe or Not Suitable</string>
+    <string name="TOS"><h2>Tems of Service</h2><p>\nThis is Test, hello world.</p></string>
+</resources>

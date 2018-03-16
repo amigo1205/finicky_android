@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bright_foreground_light">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp56"
+        android:background="@color/green_app_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="7">
+        <LinearLayout
+            android:id="@+id/llGoToMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="center"
+                android:src="@drawable/navigation_icon" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hometitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_weight="4.8"
+            android:gravity="center_vertical"
+            android:text="Terms of Service"
+            android:textColor="@color/bright_foreground_light"
+            android:textSize="25.0sp" />
+
+        <LinearLayout
+            android:id="@+id/llBackArrow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="@dimen/dp32"
+                android:layout_height="@dimen/dp32"
+                android:src="@drawable/backicon" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/wvTermOfService"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+        <TextView
+            android:id="@+id/tvTermsOfService"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:scrollbars="vertical"
+            android:text="@string/TOS"
+            android:textColor="@color/bright_foreground_dark"
+            android:textSize="18.0dp"
+            android:visibility="gone"/>
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:visibility="gone"></com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bright_foreground_disabled_holo_dark">
+    <Spinner
+        android:id="@+id/spnReportCategory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:entries="@array/reportOption"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20" >
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:background="@color/bright_foreground_disabled_holo_light"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp170"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="(optional)"
+            android:textColor="@color/bright_foreground_light"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginBottom="@dimen/dp2"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/bright_foreground_disabled_holo_light"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etRptDetailContent"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp120"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/edge"
+            android:gravity="top"
+            android:hint="(optional) provide more details here"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="300"
+            android:textColor="@color/bright_foreground_light"
+            android:textColorHint="@color/bright_foreground_light"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@color/bright_foreground_disabled_holo_light"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textColor="@color/bright_foreground_light"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tvOk"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp30"
+            android:text="OK"
+            android:textColor="@color/bright_foreground_light"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

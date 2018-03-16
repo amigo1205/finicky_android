@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bright_foreground_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="Sign Out"
+        android:textColor="@color/bright_foreground_dark"
+        android:textSize="22.0dip" />
+
+    <TextView
+        android:id="@+id/tvGotItDialogMsg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="Are your Sure, You want to Sign Out"
+        android:textColor="@color/bright_foreground_holo_dark" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginTop="30.0dip"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llSignoutNo"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tvSignOutNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:text="No"
+                android:textColor="@color/bright_foreground_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llSignOutYes"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10">
+            <TextView
+                android:id="@+id/tvSignOutYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:text="Yes"
+                android:textColor="@color/bright_foreground_dark" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

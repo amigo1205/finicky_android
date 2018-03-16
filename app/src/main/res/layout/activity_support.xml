@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/bright_foreground_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green_app_color"
+        android:orientation="horizontal"
+        android:weightSum="7">
+        <LinearLayout
+            android:id="@+id/llGoToMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right">
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp30"
+                android:background="@drawable/navigation_icon"
+                android:layout_gravity="center_vertical|center"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hometitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/dp20"
+            android:text="Support"
+            android:textColor="@color/background_light"
+            android:textSize="25sp"
+            android:layout_weight="5"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:layout_marginTop="20.0dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ"
+            android:textColor="@android:color/black"
+            android:textSize="22.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="25.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/green_app_color">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_below="@+id/textView" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="25.0dip"
+            android:layout_marginRight="25.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/green_app_color">
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_below="@+id/textView" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30.0dip"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bContactus"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_margin="50.0dip"
+            android:background="@drawable/button_background"
+            android:onClick="goNextPage"
+            android:text="CONTACT US"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10.0dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTermsAndCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:onClick="goNextPage"
+                android:padding="5.0dip"
+                android:shadowColor="@color/grey_app_color"
+                android:text="@string/terms_and_service"
+                android:textSize="25sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="@color/bright_foreground_light" />
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/grey_app_color"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+    </LinearLayout>
+</LinearLayout>

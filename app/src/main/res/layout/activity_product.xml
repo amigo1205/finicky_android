@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bright_foreground_light"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:background="@color/green_app_color"
+            android:orientation="horizontal"
+            android:weightSum="7">
+            <LinearLayout
+                android:id="@+id/llGoToMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/btnMenu"
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/navigation_icon"
+                    android:layout_gravity="center_vertical|center"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/hometitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="Product"
+                android:textColor="@color/background_light"
+                android:textSize="25sp"
+                android:layout_weight="5.04"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/bright_foreground_dark"
+            android:textSize="20sp"
+            android:maxLines="10"
+            android:padding="5.0dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.0dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProductIngredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:layout_marginTop="10.0dip"
+                    android:text="Ingredients:"
+                    android:textColor="@color/bright_foreground_dark"
+                    android:textSize="20sp"
+                    android:padding="5.0dip" />
+
+                <TextView
+                    android:id="@+id/tvIngredientShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:text="Show"
+                    android:textColor="@color/green_app_color" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvIngredients"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_marginLeft="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:maxLines="200"
+                android:background="@color/bright_foreground_light"
+                android:scrollbars="vertical"
+                android:textColor="@color/bright_foreground_dark"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lvFilters"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp320"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+        </ListView>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp110"
+        android:background="@color/bright_foreground_light"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnReportProduct"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/button_background"
+            android:text="REPORT THIS PROJECT"
+            android:textColor="@color/bright_foreground_light" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp10"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ivSplashImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

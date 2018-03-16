@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bright_foreground_light">
+    <LinearLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvAlertTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginLeft="@dimen/dp20"
+            android:textSize="20sp"
+            android:textColor="@color/bright_foreground_disabled_holo_dark"
+            android:text=""/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp20"></LinearLayout>
+        <TextView
+            android:id="@+id/tvErrorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@color/bright_foreground_disabled_holo_dark"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"></LinearLayout>
+        <TextView
+            android:id="@+id/tvDismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp40"
+            android:layout_marginBottom="@dimen/dp20"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/green_app_color"/>
+    </LinearLayout>
+</LinearLayout>
